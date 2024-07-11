@@ -9,7 +9,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
   const pathname = usePathname();
   const {replace} = useRouter();
   const handleSearch  = useDebouncedCallback((term : string) => { //lazy callback
-    console.log("vercel 배포 안됨....이유");
+    console.log("searching...");
     const params = new URLSearchParams(searchParams);
     params.set('page', '1');  
     if(term) {
